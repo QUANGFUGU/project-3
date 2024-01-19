@@ -41,6 +41,8 @@ a {
     font-style: normal;
     font-weight: 400;
     border: solid 1px #2e80ce;
+
+    cursor: pointer;
 }
 
 .header {
@@ -106,7 +108,7 @@ a {
     display: flex;
 }
 
-.action__login,
+.header-action__login,
 .navbar__link {
     font-size: 1rem;
     font-weight: 300;
@@ -115,8 +117,8 @@ a {
     text-align: center;
 }
 
-.action__login:hover,
-.action__signup:hover,
+.header-action__login:hover,
+.header-action__signup:hover,
 .navbar__link:hover,
 .navbar__link--active {
     color: #fff;
@@ -135,18 +137,96 @@ a {
     left: -8px;
 }
 
-.action {
+.header-action {
     display: flex;
     align-items: center;
 }
 
-.action__signup {
+.header-action__signup {
+    margin-left: 7px;
     min-width: 104px;
     height: 44px;
     line-height: 42px;
-    cursor: pointer;
 }
 
-.action__signup:hover {
+.hero__btn:hover,
+.header-action__signup:hover {
     opacity: 0.8;
+}
+
+/* Hero */
+.hero {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 76px;
+}
+
+.hero__content {
+    width: 44%;
+    flex-shrink: 0;
+}
+
+.hero__media {
+    flex-grow: 1;
+}
+
+.hero__heading {
+    color: #fff;
+    font-size: 70px;
+    font-weight: 600;
+    line-height: 1.14;
+    letter-spacing: -1.4px;
+}
+
+.hero__desc {
+    margin-top: 22px;
+    color: #c9d2da;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: 1.66;
+}
+
+.hero__desc--call {
+    color: #fff;
+    text-align: center;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 30px; /* 166.667% */
+}
+
+.hero-action {
+    margin-top: 38px;
+    display: flex;
+    align-items: center;
+}
+
+.hero__btn {
+    margin-right: 38px;
+}
+
+.hero__images {
+    display: flex;
+    align-items: center;
+
+    justify-content: flex-end;
+}
+
+.hero__img:first-child {
+    margin-right: -6px;
+    z-index: 1;
+}
+
+.hero__img:last-child {
+    width: 210px;
+    height: 410px;
+    border-radius: 0 6px 6px 0;
+}
+
+.hero__img {
+    width: 330px;
+    height: 540px;
+    object-fit: cover;
+    border-radius: 6px;
 }
